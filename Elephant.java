@@ -1,7 +1,7 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class elephant here.
+ * Our elephant animal.
  * 
  * @author Jason Qian
  * @version May 2023
@@ -27,6 +27,7 @@ public class Elephant extends Actor
         //Remove apple if elephant eats it
         eat();
     }
+    
     /**
     * Eat the apple and spawn new apple if an apple is eaten
     */
