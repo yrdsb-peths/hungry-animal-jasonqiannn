@@ -48,11 +48,5 @@ public class TitleScreen extends World
         addObject(label2,300,350); 
         Elephant elephant = new Elephant();
         addObject(elephant,300,250);
-        Apple apple = new Apple();
-        addObject(apple,300,125);
-        Apple apple2 = new Apple();
-        addObject(apple2,450,250);
-        Apple apple3 = new Apple();
-        addObject(apple3,150,250);
     }
 }
