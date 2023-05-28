@@ -78,7 +78,6 @@ public class Elephant extends Actor
         {
             move(2);
             facing = "right";
-
         }
         
         // Remove apple if elephant eats it

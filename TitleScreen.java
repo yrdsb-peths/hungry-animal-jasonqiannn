@@ -44,9 +44,9 @@ public class TitleScreen extends World
         titleLabel.setLocation(300, 50);
         Label label = new Label("Press <SPACE> to Start!", 40);
         addObject(label,300,375);
-        Label label2 = new Label("HINT: use ? and ? to move!", 30);
+        Label label2 = new Label("HINT: use \u2190 and \u2192 to move!", 30);
         addObject(label2,300,350); 
         Elephant elephant = new Elephant();
-        addObject(elephant,300,250);
+        addObject(elephant,300,200);
     }
 }
