@@ -11,6 +11,7 @@ public class MyWorld extends World
     public int score = 0;
     Label scoreLabel;
     int level = 1;
+    int glevel = 5;
     
     /**
      * Constructor for objects of class MyWorld.
@@ -30,6 +31,7 @@ public class MyWorld extends World
         addObject(scoreLabel, 50, 50);
         
         createApple();
+        createGapple();
     }
     
     /**
@@ -49,7 +51,7 @@ public class MyWorld extends World
         score++;
         scoreLabel.setValue(score);
         
-        if(score % 5 == 0)
+        if(score % 10 == 0)
         {
             level += 1;
         }
@@ -65,5 +67,17 @@ public class MyWorld extends World
         int x = Greenfoot.getRandomNumber(getWidth());
         int y = 0;
         addObject(apple, x, y);
+    }
+
+    /**
+     * Create a gapple at random location at top of screen
+     */
+    public void createGapple()
+    {
+        Gapple gapple = new Gapple();
+        gapple.setSpeed(glevel);
+        int x = Greenfoot.getRandomNumber(getWidth());
+        int y = 0;
+        addObject(gapple, x, y);
     }
 }

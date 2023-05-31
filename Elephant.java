@@ -66,17 +66,21 @@ public class Elephant extends Actor
         }
     }
     
+    /**
+     * Act - do whatever the Elephant wants to do. This method is called whenever
+     * the 'Act' or 'Run' button gets pressed in the environment.
+     */
     public void act() 
     {
         // Add your action code here.
         if(Greenfoot.isKeyDown("left"))
         {
-            move(-2);
+            move(-7);
             facing = "left";
         }
         else if(Greenfoot.isKeyDown("right"))
         {
-            move(2);
+            move(7);
             facing = "right";
         }
         
@@ -97,6 +101,15 @@ public class Elephant extends Actor
             removeTouching(Apple.class);
             MyWorld world = (MyWorld) getWorld();
             world.createApple();
+            world.increaseScore();
+            elephantSound.play();
+        }
+        
+        if(isTouching(Gapple.class))
+        {
+            removeTouching(Gapple.class);
+            MyWorld world = (MyWorld) getWorld();
+            world.createGapple();
             world.increaseScore();
             elephantSound.play();
         }
