@@ -72,7 +72,7 @@ public class Elephant extends Actor
      */
     public void act() 
     {
-        // Add your action code here.
+        // Left key move left right key move right at a value of 7
         if(Greenfoot.isKeyDown("left"))
         {
             move(-7);
@@ -96,6 +96,7 @@ public class Elephant extends Actor
     */
     public void eat()
     {
+        // If elephant touching the apple remove it and spawn a new one
         if(isTouching(Apple.class))
         {
             removeTouching(Apple.class);
@@ -105,6 +106,7 @@ public class Elephant extends Actor
             elephantSound.play();
         }
         
+        // If elephant touching the gapple remove it and spawn a new one
         if(isTouching(Gapple.class))
         {
             removeTouching(Gapple.class);

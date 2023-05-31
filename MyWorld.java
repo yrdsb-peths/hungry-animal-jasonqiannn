@@ -30,6 +30,7 @@ public class MyWorld extends World
         scoreLabel = new Label(0, 80);
         addObject(scoreLabel, 50, 50);
         
+        // Draw apple and gapple to screen
         createApple();
         createGapple();
     }
@@ -51,6 +52,7 @@ public class MyWorld extends World
         score++;
         scoreLabel.setValue(score);
         
+        // Every 10 points the speed of the apple increases by 1
         if(score % 10 == 0)
         {
             level += 1;
