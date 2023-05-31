@@ -8,7 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Gapple extends Actor
 {
-    int speed = 10;
+    int speed = 1;
     
     /**
      * Act - do whatever the Gapple wants to do. This method is called whenever

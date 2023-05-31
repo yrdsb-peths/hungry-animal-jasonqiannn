@@ -11,7 +11,7 @@ public class MyWorld extends World
     public int score = 0;
     Label scoreLabel;
     int level = 1;
-    int glevel = 5;
+    int glevel = 4;
     
     /**
      * Constructor for objects of class MyWorld.
